@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrostTech - Refrigeration Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for animations and hover effects */
+    .hero {
+      background-image: url('https://via.placeholder.com/1920x1080?text=Refrigeration+Innovation');
+      background-size: cover;
+      background-position: center;
+    }
+    .card-hover:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease;
+    }
+  </style>
+</head>
+<body class="font-sans">
+  <!-- Header -->
+  <header class="bg-blue-800 text-white py-4 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <h1 class="text-2xl font-bold">FrostTech</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#products" class="hover:text-blue-300">Products</a>
+        <a href="#about" class="hover:text-blue-300">About Us</a>
+        <a href="#contact" class="hover:text-blue-300">Contact</a>
+        <a href="#support" class="hover:text-blue-300">Support</a>
+      </nav>
+      <button class="md:hidden text-xl">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero h-screen flex items-center justify-center text-white text-center">
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+      <h2 class="text-5xl font-bold mb-4">Innovative Refrigeration Solutions</h2>
+      <p class="text-xl mb-8">Delivering cutting-edge cooling technology for your business and home.</p>
+      <a href="#products" class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">Explore Products</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h3 class="text-4xl font-bold text-center mb-12">Our Products</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+          <img src="https://via.placeholder.com/400x300?text=Commercial+Refrigerators" alt="Commercial Refrigerators" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-4">Commercial Refrigerators</h4>
+            <p class="text-gray-600 mb-6">High-performance refrigeration for businesses.</p>
+            <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Learn More</a>
+          </div>
+        </div>
+        <!-- Product Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+          <img src="https://via.placeholder.com/400x300?text=Industrial+Coolers" alt="Industrial Coolers" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-4">Industrial Coolers</h4>
+            <p class="text-gray-600 mb-6">Robust cooling solutions for large-scale operations.</p>
+            <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Learn More</a>
+          </div>
+        </div>
+        <!-- Product Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+          <img src="https://via.placeholder.com/400x300?text=Residential+Units" alt="Residential Units" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-4">Residential Units</h4>
+            <p class="text-gray-600 mb-6">Efficient and stylish refrigeration for your home.</p>
+            <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-12">About FrostTech</h3>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        FrostTech is a leader in refrigeration technology, providing innovative solutions for commercial, industrial, and residential needs. Our commitment to quality and sustainability ensures that our products are both reliable and eco-friendly.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-12">Contact Us</h3>
+      <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+        Have questions or need support? Reach out to us today, and our team will be happy to assist you.
+      </p>
+      <form class="max-w-lg mx-auto space-y-6">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+        <textarea placeholder="Your Message" class="w-full px-4 py-3 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 h-40"></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 FrostTech. All rights reserved.</p>
+      <nav class="mt-4 space-x-6">
+        <a href="#products" class="hover:text-blue-300">Products</a>
+        <a href="#about" class="hover:text-blue-300">About Us</a>
+        <a href="#contact" class="hover:text-blue-300">Contact</a>
+        <a href="#privacy" class="hover:text-blue-300">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
